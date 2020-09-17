@@ -1,1 +1,1 @@
-FLASK_APP=app.package_tracker.py
+FLASK_APP=package_tracker.py

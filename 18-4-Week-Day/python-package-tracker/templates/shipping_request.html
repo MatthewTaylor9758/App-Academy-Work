@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Sample Form</title>
+</head>
+
+<body>
+    <form action='' method='post'>
+      {{ form.hidden_tag() }}
+      <p>
+        {{ form.sender_name.label }}
+        {{ form.sender_name() }}
+      </p>
+      <p>
+        {{ form.recipient_name.label }}
+        {{ form.recipient_name() }}
+      </p>
+      <p>
+        {{ form.origin.label }}
+        {{ form.origin() }}
+      </p>
+      <p>
+        {{ form.destination.label }}
+        {{ form.destination() }}
+      </p>
+      <p>
+        {{ form.express_shipping.label }}
+        {{ form.express_shipping() }}
+      </p>
+      <p>
+        {{ form.submit() }}
+      </p>
+    </form>
+</body>
+
+</html>
