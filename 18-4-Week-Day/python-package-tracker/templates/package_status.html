@@ -4,10 +4,18 @@
   <title>Document</title>
 </head>
 <body>
-  hello
   {% for package in packages %}
     <p>
-      {{ packages }}
+      <strong>Sender: </strong>
+      {{ package.sender }}
+      <strong>Recipient: </strong>
+      {{ package.recipient }}
+      <strong>Origin: </strong>
+      {{ package.origin }}
+      <strong>Destination: </strong>
+      {{ package.destination }}
+      <strong>Location: </strong>
+      {{ package.location }}
     </p>
   {% endfor %}
 </body>
