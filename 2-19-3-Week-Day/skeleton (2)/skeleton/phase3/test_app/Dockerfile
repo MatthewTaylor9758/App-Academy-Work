@@ -1,4 +1,4 @@
-FROM node:6-alpine
+FROM node:10-alpine
 
 WORKDIR /app
 
@@ -7,6 +7,9 @@ COPY . /app
 # RUN apt-get update
 # RUN apt-get upgrade -y
 # RUN apt-get install -y nodejs ssh mysql
+
+EXPOSE 5500
+
 RUN npm install
 
 CMD ["npm", "start"]
