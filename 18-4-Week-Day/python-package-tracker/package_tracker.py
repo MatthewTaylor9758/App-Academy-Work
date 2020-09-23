@@ -25,6 +25,7 @@ migrate = Migrate(app, db)
 @app.route('/')
 def root_endpoint():
     packages = Package.query.all()
+    Package.advance_all_locations()
     return render_template('package_status.html', packages=packages)
 
 

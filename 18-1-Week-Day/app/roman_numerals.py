@@ -1,6 +1,8 @@
 def parse(val):
   if val == "IX":
     return 9
+  if val == "X":
+    return 10
   list1 = list(val)
   num = 0
   for i in list1:
