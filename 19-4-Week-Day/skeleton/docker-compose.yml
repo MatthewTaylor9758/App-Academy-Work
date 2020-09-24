@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  nginx:
+    build: .
+    image: mtaylor9758/whatever
+    ports:
+      - '80:80'
